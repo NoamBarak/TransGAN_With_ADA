@@ -1,7 +1,7 @@
 
 # Enhancing TransGAN with Adaptive Data Augmentation (ADA) for CIFAR-10
 
-## Overview
+## Overview 🔍
 
 This project aims to enhance a traditional TransGAN model by integrating Adaptive Data Augmentation (ADA) techniques to evaluate their impact on the model's performance. The primary goal is to assess whether ADA can reduce artifact leakage in generated images and improve the overall fidelity of the model, as measured by the Fréchet Inception Distance (FID). The was our final assigment in our Deep Generative Course.
 
@@ -25,7 +25,7 @@ This study enhances a traditional TransGAN model by integrating Adaptive Data Au
 
 ## Methodology
 
-### CIFAR-10 Dataset
+### CIFAR-10 Dataset 
 
 We chose the CIFAR-10 dataset for training and testing due to our computational limitations and its provision of small-sized images (32x32). CIFAR-10, consisting of 60,000 32x32 color images in 10 classes, is widely used for machine learning research. Its diverse and balanced dataset makes it ideal for training and testing innovative GAN architectures.
 
@@ -65,7 +65,7 @@ These parameters were kept constant across all experiments to isolate the effect
 
 ## Results and Discussion
 
-### FID Scores
+### FID Scores ✅
 
 | Methods                         | FID (lower is better) |
 |---------------------------------|-----------------------|
@@ -74,7 +74,7 @@ These parameters were kept constant across all experiments to isolate the effect
 | Test 3 (Dynamic ADA Model)      | 26.34                 |
 | Test 4 (Early-Stage ADA Model)  | 24.37                 |
 
-### Discussion and Conclusion
+### Discussion and Conclusion 📝
 
 As the results show, the use of adaptive data augmentation (ADA) enhanced the performance of the TransGAN model. Among the different approaches tested, the early-stage ADA model provided the best results. However, the overall differences in Fréchet Inception Distance (FID) scores across the models were not significant. We suspect this lack of pronounced improvement in FID might be due to unoptimized hyperparameters and compute limitations, which prevented us from fully maximizing the model's potential.
 
